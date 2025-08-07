@@ -47,6 +47,8 @@ To begin, we’ll create a Virtual Private Cloud (VPC) in the US-East-1 (North V
 | **App Server SG** | Accepts traffic from ALB SG, SSH only from ICE SG |
 | **RDS SG** | Allows MySQL (3306) from App Server SG only |
 | **EFS SG** | NFS from App Server SG, and from itself |
+
+
 Our configuration is now such that: Any traffic coming into our application server must come from the load balancer, or it will be dropped. Also, any request made to the database must come from the security group of the application server, or else, it will be dropped. Same thing for the EFS, any traffic not coming from the security group of the application server should be dropped as well.
 
 ---
