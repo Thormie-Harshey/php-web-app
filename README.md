@@ -1,6 +1,6 @@
 # Deploying WordPress on AWS Using a Three-Tier Architecture
 
-![Three-Tier Architecture for WordPress](images/three-tier.png)
+![Architecture Diagram](https://github.com/Thormie-Harshey/php-web-app/blob/main/images/three%20tier%20archi.jpg)
 
 ## Introduction
 Imagine a WordPress setup that’s scalable, secure, and resilient to traffic spikes! In this guide, we’ll deploy WordPress on AWS using a Three-Tier Architecture, dividing the setup into **Web**, **Application**, and **Database** layers for separation, security, and scalability.
